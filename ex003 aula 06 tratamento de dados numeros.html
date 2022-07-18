@@ -8,16 +8,22 @@
 </head>
 <body>
     <h1>Tratamento de dados - Curso JavaScript #06</h1>
-    <p>Trabalhando variaveis com números</p>
+    <h2>Trabalhando variaveis com números</h2>
     <p>Para converter para string existem dois modos: String(n) ou n.toString()</p>
-    <p>Use "placeholder" ou "template string": São textos entre crases com ${} para mostrar a variavel dentro do texto que nem no python quando se usa o f antes das aspas que é o format com as variaveis dentro das chaves</p>
+    <p>Use "placeholder $()"  no template string": São textos entre crases >>> ${} para mostrar a variável dentro do texto igual ao  python quando se usa o "f" antes das aspas (format) com as variáveis dentro das chaves</p>
+    <h2>Formatando Strings</h2>
+    <p>
+        s.length        // quantos caracteres a string tem <br>
+        s.toUpperCase() // tudo para MAIÚSCULAS <br>
+        s.toLowerCase() // tudo para minúsculas
+    </p>
     <script>
     var n1 = Number(window.prompt('Digite um número: '))
     var n2 = Number(window.prompt('Digite outro número: '))
     var soma = n1 + n2
-    window.alert('A soma dos valores é '+ soma)
+    window.alert(`A soma dos valores entre ${n1.toFixed(2).replace('.',',')} e ${n2} é igual a ${soma}`)// TEMPLATE STRING
     // O sinal de + serve para concatenar ou somar
-    // sem delimitar o java script le os valores como string e concatena o resultado
+    // sem delimitar a variavel como number o java script lê os valores como string e concatena o resultado
     
     </script> 
 </body>
