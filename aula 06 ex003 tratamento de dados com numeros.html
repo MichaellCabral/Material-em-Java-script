@@ -21,7 +21,8 @@
     var n1 = Number(window.prompt('Digite um número: '))
     var n2 = Number(window.prompt('Digite outro número: '))
     var soma = n1 + n2
-    window.alert(`A soma dos valores entre ${n1.toFixed(2).replace('.',',')} e ${n2} é igual a ${soma}`)// TEMPLATE STRING
+    window.alert(`A soma dos valores entre ${n1.toFixed(2).replace('.',',')} e ${n2.toFixed(2).replace('.',',')} é igual a ${soma.toLocaleString('pt-BR',{style: 'currency',currency: 'BRL'})}`)// "tofixed(2)" vai mostrar dois pontos flutuantes após a vírgula e o ".replace" substitui o ponto pela vírgula
+    // ".toLocaleString('pt-BR',{style: 'currency',currency: 'BRL'})" mostra o resultado em valor monetário
     // O sinal de + serve para concatenar ou somar
     // sem delimitar a variavel como number o java script lê os valores como string e concatena o resultado
     
