@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso em video</title>
+</head>
+<body>
+    <h1>Operadores (Parte1) - Curso JavaScript #07</h1>
+    <p>Nesta aula vamos começar com os dois primeiros da lista: ARITMETICOS E ATRIBUIÇÃO</p>
+    <ul>
+        <li>Aritméticos</li>
+        <li>Atribuição</li>
+        <li>Relacionais</li>
+        <li>Lógicos</li>
+        <li>Ternário</li>
+    </ul>
+    
+    <h2>Aritmeticos</h2>
+    <ol>
+        <li>Adicao           +</li>
+        <li>Subtração        -</li>
+        <li>Multiplicação    *</li>
+        <li>Divisão          /</li>
+        <li>Resto da Divisão %</li>
+        <li>Potenciação      **</li>
+    </ol>
+    <h3>Ordem de precedência</h3>
+    <P>Utillize os parenteses para mudar a ordem de precedência</P>
+        <ol>
+            <li>()</li>
+            <li>**</li>
+            <li>* / %</li>
+            <li>+ -</li>
+        </ol>
+    <h2>Atribuição</h2>
+    <h3>Atribuição Simples</h3>
+    <script>
+        var a = 5 + 3
+        var b = a % 5
+        var c = 5 * b ** 2
+        var d = 10 - a/2
+        var e = 6 * 2 / d
+        var f = b % e + 4 / e
+        window.alert(`As contas das respectivas variaves é igual a:
+        var a = 5 + 3 = ${a}  
+        var b = a % 5 = ${b} 
+        var c = 5 * b ** 2 = ${c} 
+        var d = 10 - a/2 = ${d} 
+        var e = 6 * 2 / d = ${e} 
+        var f = b % e + 4 / e = ${f}`)
+        // O comando acima abre no prompt do navegador o resultado das operações
+    </script>
+    <h3>Auto-Atribuição</h3>
+    <script>
+        var n = 3 
+        n = n + 4 // n+= 4 Simplificando
+        n = n - 5 // n-= 5
+        n = n * 4 // n*= 4 
+        n = n / 2 // n/= 2
+        n = n ** 2 // n**= 2
+        n = n % 5 // n%= 5
+        window.alert(`Auto-Atribuição para variaveis que rodaram no código js 
+        
+        Resultado final ${n}`)  
+    </script>
+    <h3>Operadores de incremento</h3>
+    <p>Os operadores são simplificados ainda mais: de x=5 >> x=x+1 >> x+=1 >> x++ </p><br>
+    <p>Os operadores são simplificados ainda mais: de x=5 >> x=x-1 >> x-=1 >> x--</p>
+</body>
+</html>
