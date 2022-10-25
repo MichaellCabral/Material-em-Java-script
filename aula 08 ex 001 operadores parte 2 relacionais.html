@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso em video</title>
+</head>
+<body>
+    <h1>Operadores (Parte2) - Curso JavaScript #08</h1>
+    <h2>Nesta aula vamos continuar com operadores RELACIONAIS</h2>
+    <ul>
+        <li>Aritméticos</li>
+        <li>Atribuição</li>
+        <li>Relacionais</li>
+        <li>Lógicos</li>
+        <li>Ternário</li>
+    </ul>
+    
+    <h2>
+        <h3>Relacionais</h3>
+    <p>Para todo o resultado entre expressões relacionais teremos um valor booleano como verdadeiro ou falso</p><br>
+    <p>Sempre que houver operadores realcionais e aritmeticos na mesma linha, primeiro se resolve os aritmeticos e depois os relacionais</p>
+
+    <ul>
+        <li>> maior</li>
+        <li>< menor</li>
+        <li>>= maior e igual</li>
+        <li><= menor e igual</li>
+        <li>== igual (verifica apenas valor)</li>
+        <li>!=< não igual</li>
+        <li>=== verifica se são do mesmo tipo e valor</li>
+    </ul>
+
+    <script>
+      //Criei duas variáveis para que seja verificado se é verdadeiro ou falso os números digitados pelo usuário. O sistema responde em booleano true (verdadeiro) false (falso)
+      var n1 = Number(window.prompt('Digite um número: '))
+      var n2 = Number(window.prompt('Digite outro número: '))
+      var resposta = n1 > n2
+      window.alert(`O número ${n1} é maior que  ${n2} é ${resposta}`) // Aqui o sistema responde em booleano no navegador
+    </script>
+</body>
+</html>

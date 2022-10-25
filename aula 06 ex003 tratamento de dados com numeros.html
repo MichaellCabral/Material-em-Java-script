@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso em video</title>
+</head>
+<body>
+    <h1>Tratamento de dados - Curso JavaScript #06</h1>
+    <h2>Trabalhando variaveis com números</h2>
+    <p>Para converter para string existem dois modos: String(n) ou n.toString()</p>
+    <p>Use "placeholder $()"  no template string": São textos entre crases >>> ${} para mostrar a variável dentro do texto igual ao  python quando se usa o "f" antes das aspas (format) com as variáveis dentro das chaves</p>
+    <h2>Formatando Strings</h2>
+    <p>
+        s.length        // quantos caracteres a string tem <br>
+        s.toUpperCase() // tudo para MAIÚSCULAS <br>
+        s.toLowerCase() // tudo para minúsculas
+    </p>
+    <script>
+    var n1 = Number(window.prompt('Digite um número: '))
+    var n2 = Number(window.prompt('Digite outro número: '))
+    var soma = n1 + n2
+    window.alert(`A soma dos valores entre ${n1.toFixed(2).replace('.',',')} e ${n2.toFixed(2).replace('.',',')} é igual a ${soma.toLocaleString('pt-BR',{style: 'currency',currency: 'BRL'})}`)// "tofixed(2)" vai mostrar dois pontos flutuantes após a vírgula e o ".replace" substitui o ponto pela vírgula
+    // ".toLocaleString('pt-BR',{style: 'currency',currency: 'BRL'})" mostra o resultado em valor monetário
+    // O sinal de + serve para concatenar ou somar
+    // sem delimitar a variavel como number o java script lê os valores como string e concatena o resultado
+    
+    </script> 
+</body>
+</html>
